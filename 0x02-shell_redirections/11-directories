@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type d 0not -name '.' |wc -1
