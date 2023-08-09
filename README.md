@@ -1,1 +1,1 @@
-alx-system_engineering-devops is repo about shell, basics tasks
+0x03. Shell, init files, variables and expansions
