@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Script that loops form 1 -10
+count=0
+
+
