@@ -34,14 +34,14 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend egazi-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend egazi-tech-backend
 
-backend clickviral-tech-backend
+backend egazi-tech-backend
     balance roundrobin
-    server 497489-web-01 54.84.89.16 check
-    server 497489-web-02 54.227.128.24 check
+    server 497489-web-01 54.84.89.16:80 check
+    server 497489-web-02 54.227.128.24:80 check
 "
 
 # shellcheck disable=SC2154
