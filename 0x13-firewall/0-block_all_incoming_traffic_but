@@ -1,0 +1,22 @@
+echo -e "Updating\n"
+
+sudo apt-get update
+
+echo -e "Installing ufw\n"
+
+sudo apt-get install -y ufw
+
+echo -e "Configuring ufw..\n"
+
+# Setting up default policies allow Outgoing and Deny Incomig
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Allowing SSH by port Number
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw allow 443
+
+# Enable UFW
+sudo ufw show added
+sudo ufw enable
