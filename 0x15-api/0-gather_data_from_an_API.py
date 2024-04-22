@@ -6,9 +6,7 @@ import re
 import requests
 import sys
 
-
 REST_API = "https://jsonplaceholder.typicode.com"
-
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
